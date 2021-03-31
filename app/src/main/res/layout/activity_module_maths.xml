@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModuleMathsActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/module_maths_titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisis ton opération !"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/module_maths_titre"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/module_maths_plus"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/plus_mahts_module"
+            android:onClick="navigationToAdditions"/>
+
+        <ImageView
+            android:id="@+id/module_maths_moins"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/moins_mahts_module"
+            android:onClick="navigationToSoustraction"/>
+
+        <ImageView
+            android:id="@+id/module_maths_multiplier"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/multipli_mahts_module"
+            android:onClick="navigationToMultiplication"/>
+
+        <ImageView
+            android:id="@+id/module_maths_diviser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/quotien_mahts_module"
+            android:onClick="navigationToQuotien"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
