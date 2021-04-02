@@ -14,6 +14,9 @@
         <activity android:name=".ModuleQuotienActivity" />
         <activity android:name=".ModuleSoustractionActivity" />
         <activity android:name=".ModuleAdditionsActivity" />
+        <activity android:name=".TableMultiplicationActivity"/>
+        <activity android:name=".FelicitationActivity"/>
+        <activity android:name=".ErreurActivity"/>
         <activity android:name=".ModuleMultiplicationActivity" />
         <activity android:name=".ModuleMathsActivity" />
         <activity android:name=".ChoixMatiereActivity" />
