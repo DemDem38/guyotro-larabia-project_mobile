@@ -6,11 +6,12 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 @Entity
 public class Question implements Serializable {
 
-    public Question(String question, String tag, String reponseTrue, String reponseFalse1, String reponseFalse2){
+    public Question(String question, String tag, String reponseTrue,String reponseFalse1,String reponseFalse2){
         this.question = question;
         this.tag = tag;
         this.reponseTrue = reponseTrue;
@@ -56,9 +57,7 @@ public class Question implements Serializable {
 
     public void setQuestion(String question) {this.question = question;}
 
-    public String getReponseTrue() {
-        return reponseTrue;
-    }
+    public String getReponseTrue() {return reponseTrue;}
 
     public void setReponseTrue(String reponseTrue) {this.reponseTrue = reponseTrue;}
 

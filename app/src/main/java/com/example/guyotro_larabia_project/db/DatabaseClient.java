@@ -53,7 +53,15 @@ public class DatabaseClient {
             super.onCreate(db);
             //valeur de l'utilisateur anonyme
             db.execSQL("INSERT INTO user (nom, prenom ) VALUES(\"Anonyme\", \"\");");
-
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Comment écrit-on 'retrouver' dans la phrase : Lucie veut ' ? ' son chapeau.\", \"français\", \"Retrouver\", \"Retrouvé\",\"Retrouvée\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Dans le dictionnaire que veut dire 'n. m. ' ?\", \"français\", \"Nom masculin\", \"Neige magnique\",\"Nomination masculine\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Combien de personnes parlent dans un monologue ?\", \"français\", \"1\", \"2\",\"3\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Quel est le féminin de : rédacteur ?\", \"français\", \"Rédactrice\", \"Rédactionniste\",\"Rédaction\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Quel verbe se finit par un x à la première personne du singulier ?\", \"français\", \"Voir\", \"Choir\",\"Vouloir\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Quel mot a le sens le plus fort ?\", \"français\", \"épouvante\", \"Peur\",\"Crainte\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Qui dessine les dessins d'un livre ?\", \"français\", \"Illustrateur\", \"Auteur\",\"Narrateur\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Que veut dire P-S ?\", \"français\", \"Post-scriptum\", \"Page significative\",\"Patronyme supplémentaire\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Le contraire s'appelle aussi :\", \"français\", \"Antonyme\",\"Patronyme\",\"Synonyme\")");
         }
     };
 
