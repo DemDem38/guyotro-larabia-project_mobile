@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FelicitationMultiplicationActivity">
+    tools:context=".FelicitationOpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,8 +22,8 @@
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CHOISIR UNE AUTRE TABLE"
-            android:onClick="feli_changeTable"
+            android:text="Recommencer"
+            android:onClick="feli_Restart"
             android:layout_gravity="center"/>
 
     </LinearLayout>
@@ -31,9 +31,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CHOISIR UN AUTRE EXERCICE"
+        android:text="Choisir une autre operation"
         android:layout_centerHorizontal="true"
-        android:onClick="feli_changeAct"
+        android:onClick="feli_changeOp"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

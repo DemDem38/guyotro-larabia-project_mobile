@@ -6,23 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--        <TextView-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="48dp"-->
-    <!--            android:layout_centerHorizontal="true"-->
-    <!--            android:gravity="center"-->
-    <!--            android:text="1 x ? = "-->
-    <!--            android:textSize="20dp"-->
-    <!--            android:id="@+id/table1"-->
-    <!--            ></TextView>-->
-    <!--        <EditText-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="48dp"-->
-    <!--            android:layout_toRightOf="@id/table1"-->
-    <!--            android:textSize="20dp"-->
-    <!--            android:id="@+id/tableRep1"-->
-    <!--            android:hint="?"></EditText>-->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -78,11 +78,11 @@ public class TableMultiplicationActivity extends AppCompatActivity {
         }
 
         if (nbErr == 0){
-            Intent intent = new Intent(this, FelicitationActivity.class);
+            Intent intent = new Intent(this, FelicitationMultiplicationActivity.class);
             startActivity(intent);
         }
         else{
-            Intent intent = new Intent(this, ErreurActivity.class);
+            Intent intent = new Intent(this, ErreurMultiplicationActivity.class);
             intent.putExtra("nbErrors", nbErr);
             startActivity(intent);
         }

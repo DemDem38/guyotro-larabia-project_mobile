@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class FelicitationActivity extends AppCompatActivity {
+public class FelicitationOpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_felicitation);
+        setContentView(R.layout.activity_felicitation_op);
     }
 
     public void feli_changeAct(View view) {
@@ -21,7 +21,17 @@ public class FelicitationActivity extends AppCompatActivity {
     }
 
     public void feli_changeTable(View view){
-        Intent intent = new Intent(this, ModuleMultiplicationActivity.class);
+
+    }
+
+    public void feli_Restart(View view) {
+        Intent intent = new Intent(this, AdditionActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void feli_changeOp(View view) {
+        Intent intent = new Intent(this, ModuleMathsActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

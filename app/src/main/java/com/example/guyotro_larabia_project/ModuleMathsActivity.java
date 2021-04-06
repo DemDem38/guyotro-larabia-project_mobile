@@ -22,7 +22,7 @@ public class ModuleMathsActivity extends AppCompatActivity {
     }
 
     public void navigationToAdditions(View view) {
-        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
+        Intent intent = new Intent(this, AdditionActivity.class);
         startActivity(intent);
     }
 
