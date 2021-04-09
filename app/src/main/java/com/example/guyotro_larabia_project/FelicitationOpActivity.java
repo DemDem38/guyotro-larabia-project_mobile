@@ -20,7 +20,7 @@ public class FelicitationOpActivity extends AppCompatActivity {
     }
 
     public void feli_Restart(View view) {
-        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
+        Intent intent = new Intent(this, ModuleOperationsActivity.class);
         intent.putExtra(FelicitationOpActivity.OPERATOR_KEY, operator);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);

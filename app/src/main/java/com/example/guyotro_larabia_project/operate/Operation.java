@@ -1,6 +1,6 @@
 package com.example.guyotro_larabia_project.operate;
 
-public class Addition {
+public class Operation {
 
     private int operande1;
     private int operande2;
@@ -10,7 +10,7 @@ public class Addition {
     private int range = max - min + 1;
 
 
-    public Addition(boolean[] operandes, char operator){
+    public Operation(boolean[] operandes, char operator){
         //operandes a une taille de 6
         if (operandes[0]){
             this.operande1 += ((int)(Math.random()*(range)) + min)*100;

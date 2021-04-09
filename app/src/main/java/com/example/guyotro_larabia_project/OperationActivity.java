@@ -3,27 +3,25 @@ package com.example.guyotro_larabia_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.guyotro_larabia_project.operate.Addition;
-import com.example.guyotro_larabia_project.operate.TableDAddition;
+import com.example.guyotro_larabia_project.operate.Operation;
+import com.example.guyotro_larabia_project.operate.TableOperation;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class AdditionActivity extends AppCompatActivity {
+public class OperationActivity extends AppCompatActivity {
     //Clé de l'intent
     public static String CHECKLIST_KEY = "check_key";
     public static String OPERATOR_KEY = "operator";
 
-    Addition add;
-    TableDAddition table;
+    Operation add;
+    TableOperation table;
     ArrayList<String> listeRep = new ArrayList<>(); //Liste des réponses entrées
     ArrayList<Boolean> correctList = new ArrayList<>(); //liste des réponses justes et fausses
     boolean[] checkList;
@@ -33,12 +31,12 @@ public class AdditionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addition);
+        setContentView(R.layout.activity_operation);
 
         checkList = getIntent().getBooleanArrayExtra(CHECKLIST_KEY);
         operator = getIntent().getCharExtra(OPERATOR_KEY,'e');
 
-        table = new TableDAddition(checkList, operator);
+        table = new TableOperation(checkList, operator);
 
         add = table.getAdditions().get(compteur-1);
         TextView enonce = findViewById(R.id.addition_operation);
@@ -98,7 +96,7 @@ public class AdditionActivity extends AppCompatActivity {
 
         while (aIterator.hasNext() && bIterator.hasNext()){
 
-            Addition aItem = (Addition) aIterator.next();
+            Operation aItem = (Operation) aIterator.next();
             String bItem = (String) bIterator.next();
 
             // Test du résultat. Si aucune réponse n'est entrée, on attrape l'erreur et on augment nbErr

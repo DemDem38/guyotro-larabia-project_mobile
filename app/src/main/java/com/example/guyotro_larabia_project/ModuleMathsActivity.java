@@ -19,26 +19,26 @@ public class ModuleMathsActivity extends AppCompatActivity {
 
     //Navigation vers les différents module de mathématique ( voir la possibilité d'optimiser en une seule fonction)
     public void navigationToMultiplication(View view) {
-        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
-        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, 'x');
+        Intent intent = new Intent(this, ModuleOperationsActivity.class);
+        intent.putExtra(ModuleOperationsActivity.OPERATOR_KEY, 'x');
         startActivity(intent);
     }
 
     public void navigationToAdditions(View view) {
-        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
-        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, '+');
+        Intent intent = new Intent(this, ModuleOperationsActivity.class);
+        intent.putExtra(ModuleOperationsActivity.OPERATOR_KEY, '+');
         startActivity(intent);
     }
 
     public void navigationToSoustraction(View view) {
-        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
-        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, '-');
+        Intent intent = new Intent(this, ModuleOperationsActivity.class);
+        intent.putExtra(ModuleOperationsActivity.OPERATOR_KEY, '-');
         startActivity(intent);
     }
 
     public void navigationToQuotien(View view) {
-        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
-        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, '/');
+        Intent intent = new Intent(this, ModuleOperationsActivity.class);
+        intent.putExtra(ModuleOperationsActivity.OPERATOR_KEY, '/');
         startActivity(intent);
     }
 

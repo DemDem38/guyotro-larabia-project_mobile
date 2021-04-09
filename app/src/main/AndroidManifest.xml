@@ -12,16 +12,13 @@
         <activity android:name=".FelicitationOpActivity"></activity>
         <activity android:name=".ErreurOpActivity" />
         <activity
-            android:name=".AdditionActivity"
+            android:name=".OperationActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ModuleCultureActivity" />
         <activity android:name=".AddUserActivity" />
         <activity android:name=".ModuleQuotienActivity" />
-        <activity android:name=".ModuleSoustractionActivity" />
-        <activity android:name=".ModuleAdditionsActivity" />
+        <activity android:name=".ModuleOperationsActivity" />
         <activity android:name=".TableMultiplicationActivity" />
-        <activity android:name=".FelicitationMultiplicationActivity" />
-        <activity android:name=".ErreurMultiplicationActivity" />
         <activity android:name=".ModuleMultiplicationActivity" />
         <activity android:name=".ModuleMathsActivity" />
         <activity android:name=".ChoixMatiereActivity" />
