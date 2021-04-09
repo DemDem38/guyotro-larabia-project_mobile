@@ -4,14 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModuleAdditionsActivity"
-    android:gravity="center">
+    tools:context=".ModuleAdditionsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choixNiveau"
+        android:text="Choix des opérandes"
+        android:layout_marginBottom="60dp"
+        android:textSize="40dp"
+        android:gravity="center"/>
 
 <LinearLayout
     android:id="@+id/choixNiveau"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:gravity="center">
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
     <LinearLayout
         android:id="@+id/elementGauche"
         android:layout_width="wrap_content"
@@ -19,19 +29,24 @@
         android:gravity="center">
         <CheckBox
             android:id="@+id/G_100Button"
+            android:onClick="onCheckboxClicked"
             android:layout_width="25dp"
-            android:layout_height="25dp"  />
+            android:layout_height="25dp" />
         <CheckBox
             android:id="@+id/G_10Button"
+            android:onClick="onCheckboxClicked"
             android:layout_width="25dp"
             android:layout_height="25dp" />
         <CheckBox
             android:id="@+id/G_1Button"
+            android:onClick="onCheckboxClicked"
+            android:checked="true"
             android:layout_width="25dp"
             android:layout_height="25dp" />
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textOperandes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+"
@@ -46,14 +61,18 @@
         android:gravity="center">
         <CheckBox
             android:id="@+id/D_100Button"
+            android:onClick="onCheckboxClicked"
             android:layout_width="25dp"
             android:layout_height="25dp"  />
         <CheckBox
             android:id="@+id/D_10Button"
+            android:onClick="onCheckboxClicked"
             android:layout_width="25dp"
             android:layout_height="25dp" />
         <CheckBox
             android:id="@+id/D_1Button"
+            android:onClick="onCheckboxClicked"
+            android:checked="true"
             android:layout_width="25dp"
             android:layout_height="25dp" />
     </LinearLayout>
@@ -64,13 +83,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/choixNiveau"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="validerOperandes"
         android:text="Valider"/>
+
+    <Button
+        android:id="@+id/tableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réviser mes tables"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:onClick="versTable"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonValider"/>
+        android:text="Retour"
+        android:layout_marginLeft="10dp"
+        android:onClick="retourMod"
+        android:layout_alignParentBottom="true"/>
 
 
 </RelativeLayout>

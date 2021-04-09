@@ -7,10 +7,10 @@ public class TableDAddition {
     //liste d'objets Multiplications
     private ArrayList<Addition> table = new ArrayList<>();
 
-    public TableDAddition(){
+    public TableDAddition(boolean[] operandes, char operator){
 
         for (int i=1; i<=10; i++ ){
-            table.add(new Addition());
+            table.add(new Addition(operandes, operator));
         }
 
     }

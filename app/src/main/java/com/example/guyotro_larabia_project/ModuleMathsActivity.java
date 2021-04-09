@@ -8,6 +8,8 @@ import android.view.View;
 
 public class ModuleMathsActivity extends AppCompatActivity {
 
+    char operator = '+';
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,22 +19,26 @@ public class ModuleMathsActivity extends AppCompatActivity {
 
     //Navigation vers les différents module de mathématique ( voir la possibilité d'optimiser en une seule fonction)
     public void navigationToMultiplication(View view) {
-        Intent intent = new Intent(this, ModuleMultiplicationActivity.class);
+        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
+        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, 'x');
         startActivity(intent);
     }
 
     public void navigationToAdditions(View view) {
-        Intent intent = new Intent(this, AdditionActivity.class);
+        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
+        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, '+');
         startActivity(intent);
     }
 
     public void navigationToSoustraction(View view) {
-        Intent intent = new Intent(this, ModuleSoustractionActivity.class);
+        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
+        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, '-');
         startActivity(intent);
     }
 
     public void navigationToQuotien(View view) {
-        Intent intent = new Intent(this, ModuleQuotienActivity.class);
+        Intent intent = new Intent(this, ModuleAdditionsActivity.class);
+        intent.putExtra(ModuleAdditionsActivity.OPERATOR_KEY, '/');
         startActivity(intent);
     }
 
