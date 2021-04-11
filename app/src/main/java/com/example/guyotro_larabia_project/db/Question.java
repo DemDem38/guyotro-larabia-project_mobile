@@ -2,11 +2,9 @@ package com.example.guyotro_larabia_project.db;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
-import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 @Entity
 public class Question implements Serializable {

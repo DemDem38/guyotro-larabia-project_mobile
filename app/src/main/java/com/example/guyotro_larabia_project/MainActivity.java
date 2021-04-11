@@ -68,24 +68,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // EXEMPLE : Ajouter un événement long click à la listView
-        //listTask.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-
-           // @Override
-           // public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-
-                // Récupération de la tâche cliquée à l'aide de l'adapter
-               // User user = adapter.getItem(position);
-
-                // Message
-                //Toast.makeText(MainActivity.this, "LongClick : " + user.getNom(), Toast.LENGTH_SHORT).show();
-
-                //return false;
-            //}
-        //});
-
-        // Mise à jour des taches
-        //getTasks();
     }
 
     private void getTasks() {

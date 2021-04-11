@@ -21,7 +21,7 @@ public class UserAdapter extends ArrayAdapter<User> {
     }
 
     /**
-     * Remplit une ligne de la listView avec les informations de la multiplication associée
+     * Remplit une ligne de la listView avec les informations du user associée
      *
      * @param position
      * @param convertView
