@@ -20,9 +20,8 @@ public class FelicitationCultureActivity extends AppCompatActivity {
     private ArrayList<Integer> resultat = new ArrayList<Integer>();
 
     //View
-    private Button button_correction;
     private TextView text_resultat;
-    private RelativeLayout layout;
+    private TextView meilleurScore;
 
 
     @Override
@@ -38,6 +37,41 @@ public class FelicitationCultureActivity extends AppCompatActivity {
         //Initialiser les objets de la view
         text_resultat = findViewById(R.id.text_felcitation_culuture_resultat);
         text_resultat.setText("Vous avez obtenu un score de " + nbTrue + "/" + nbQuestion);
+
+        String tag = getIntent().getStringExtra("tag");
+        int meilleurScoreActuel = 0;
+        switch (tag){
+            case "français":
+                meilleurScoreActuel = ((MyApplication) this.getApplication()).getMeilleurScoreCultureFr();
+                if(nbTrue > meilleurScoreActuel){
+                    ((MyApplication) this.getApplication()).setMeilleurScoreCultureFr(nbTrue);
+                    meilleurScoreActuel = ((MyApplication) this.getApplication()).getMeilleurScoreCultureFr();
+                }
+                meilleurScore = findViewById(R.id.meilleurScore);
+                meilleurScore.setText("Meilleur score : " + meilleurScoreActuel);
+                break;
+
+            case "geographie":
+                meilleurScoreActuel = ((MyApplication) this.getApplication()).getMeilleurScoreCultureGeo();
+                if(nbTrue > meilleurScoreActuel){
+                    ((MyApplication) this.getApplication()).setMeilleurScoreCultureGeo(nbTrue);
+                    meilleurScoreActuel = ((MyApplication) this.getApplication()).getMeilleurScoreCultureGeo();
+                }
+                meilleurScore = findViewById(R.id.meilleurScore);
+                meilleurScore.setText("Meilleur score : " + meilleurScoreActuel);
+                break;
+
+            case "histoire":
+                meilleurScoreActuel = ((MyApplication) this.getApplication()).getMeilleurScoreCultureHist();
+                if(nbTrue > meilleurScoreActuel){
+                    ((MyApplication) this.getApplication()).setMeilleurScoreCultureHist(nbTrue);
+                    meilleurScoreActuel = ((MyApplication) this.getApplication()).getMeilleurScoreCultureHist();
+                }
+                meilleurScore = findViewById(R.id.meilleurScore);
+                meilleurScore.setText("Meilleur score : " + meilleurScoreActuel);
+                break;
+        }
+
     }
 
     public void navigationToModuleCulture(View view) {

@@ -51,7 +51,6 @@ public class ExerciceCultureActivity extends AppCompatActivity {
         reponse2 = findViewById(R.id.reponse2);
         reponse3 = findViewById(R.id.reponse3);
         reponses = findViewById(R.id.reponses);
-
     }
 
     private void maj_affichage(){
@@ -85,10 +84,12 @@ public class ExerciceCultureActivity extends AppCompatActivity {
            numQuestion += 1;
 
            if(numQuestion >= listeQuestion.size()){
+            String tag = getIntent().getStringExtra("tag");
             Intent intent = new Intent(this, FelicitationCultureActivity.class);
             resultat.add(nbTrue);
             resultat.add(nbQuestion);
             intent.putExtra("resultat", resultat);
+            intent.putExtra("tag",tag);
             startActivity(intent);
            }else{
                maj_affichage();
