@@ -74,6 +74,18 @@ public class DatabaseClient {
             db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Quelle phrase à propos de Sydney est correcte ?\", \"geographie\", \"C'est la ville la plus peuplée de l'Australie\", \"C'est la capitale de l'Australie\",\"C'est la ville la plus grande du monde\")");
             db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Quelle langue parlent les habitants du Brésil ?\", \"geographie\", \"Le portugais\", \"L'anglais\",\"L'espagnol\")");
             db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Qu'est ce qu'un archipel ?\", \"geograph ie\", \"Un ensemble d'îles\", \"Un bras de terre dans la mer\",\"Une grande cascade\")");
+
+            //histoire
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Les dates de la Première Guerre mondiale sont :\", \"histoire\", \"1914-1918\", \"1814-1818\",\"1939-1945\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"François Mitterrand a été élu ? fois président de la République.\", \"histoire\", \"1\", \"2\",\"3\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Napoléon a été élu Premier consul le :\", \"histoire\", \"18 brumaire 1799\", \"12 brumaire 1699\",\"11 novembre 1789\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Louis XVI a été guillotiné en\", \"histoire\", \"1793\", \"1789\",\"1458\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"En quelle année Christophe Colomb est-il arrivé en Amérique ?\", \"histoire\", \"1492\", \"2\",\"3\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Henri IV était marié à\", \"histoire\", \"Marie de Médicis\", \"Élisabeth de France\",\"Anne d'Autriche\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Charlemagne est devenu empereur en l'an\", \"histoire\", \"800\", \"900\",\"1800\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Clovis s'est fait baptiser entre ? après J.-C.\", \"histoire\", \"496 et 506\", \"450 et 481\",\"511 et 521\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"Qui est le fondateur de la dynastie mérovingienne ?\", \"histoire\", \"Mérovée\", \"Pépin le Bref\",\"Clovis\")");
+            db.execSQL("INSERT INTO question( question,  tag,  reponseTrue, reponseFalse1, reponseFalse2) VALUES(\"L'armistice de 1945 a été signé le\", \"histoire\", \"8 mai\", \"14 juillet\",\"11 novembre\")");
         }
     };
 

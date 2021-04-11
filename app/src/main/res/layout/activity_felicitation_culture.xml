@@ -16,6 +16,7 @@
         android:textAlignment="center"
         android:text="Ecrire résultat de l'exercice"
         android:textSize="25dp"
+        android:layout_margin="10dp"
         android:gravity="center_horizontal" />
 
 
